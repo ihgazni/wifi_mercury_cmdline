@@ -1,0 +1,590 @@
+
+
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>水星网络官方网站</title>
+		<meta name="keywords" content="水星网络官方网站,Mercury,美科星通信技术有限公司,无线,路由器,交换机,网卡,网络摄像头,软件,下载,最新上市" />
+        <meta name="description" content="全球领先的网络通讯设备供应商, 产品涵盖以太网、无线局域网、宽带接入、电力线通信，在既有的传输、交换、路由等主要核心领域外，正逐步进入移动互联网终端、数字家庭、网络安全等领域。Mercury始终致力于为大众提供最便利的本地局域网络互联和Internet接入手段，为大众在生活、工作、娱乐上日益增长的网络使用需求，提供高品质、高性能价格比的全面设备解决方案。" />
+        <link href="Content/images/common/mercury.png" rel="icon" />
+        <link href="/dist/css/reset.min.css" rel="stylesheet">
+		<link href="/dist/css/common.min.css?0425" rel="stylesheet">
+
+        
+    <link href="/dist/css/home.min.css" rel="stylesheet">
+    <style>
+        .mercury-slider .mercury-slider-inner {width:600%;}
+        .mercury-slider .mercury-slider-inner .mercury-slides .mercury-slider-list {width: 16.666666%;}
+    </style>
+
+	</head>
+	<body>
+        <!-- Header Start -->
+		<header class="global-header">
+      <div><div class="header-logo">
+        <a href="http://www.mercurycom.com.cn/"><img src="/Content/images/common/logo-mercury.png" alt=""></a>
+      </div>
+      <div class="header-nav">
+        <ul>
+          <li><a href="/product-list-1.html">产品中心</a><div class="nav-bottom-bar"></div></li>
+          <li><a href="/product-listsmb-1.html">商用网络</a><div class="nav-bottom-bar"></div></li>
+          <li><a href="http://service.mercurycom.com.cn">服务支持</a><div class="nav-bottom-bar"></div></li>
+          <li><a href="https://mercury.tmall.com/index.htm?spm=a1z10.1-b.w5002-4782225718.2.DrGMdl">官方商城</a><div class="nav-bottom-bar"></div></li>
+        </ul>
+      </div>
+      <div class="header-search">
+        <form action="http://service.mercurycom.com.cn/search-all.html" method="get">
+          <input type="text" name="kw" value="" placeholder="" autocomplete="off">
+          <input type="submit" value="搜索">
+        </form>
+      </div></div>
+      <nav class="header-subnav product-subnav">
+          <div class="header-subnav-top-bar"></div>
+          <ul>
+                  <li>
+                    <div class="header-subnav-img">
+                        <a href="/product-list-1.html"><img src="http://www.mercurycom.com.cn/content/images/homepage/router.png?025" alt="router" 
+                        ></a>
+                    </div>
+                    <div class="header-subnav-title"><a href="/product-list-1.html">路由器</a><img src="http://www.mercurycom.com.cn/content/images/homepage/arrow_right_normal.png" alt=">"/></div>
+                    <ul class="header-subnav-list">
+                            <li onclick = "changeType('intelligentroute')"><a href="/product-list-1.html?classtip=intelligentroute">智能分布式路由</a></li>
+                            <li onclick = "changeType('11ac')"><a href="/product-list-1.html?classtip=11ac">11AC三频无线</a></li>
+                            <li onclick = "changeType('dualbandwireless')"><a href="/product-list-1.html?classtip=dualbandwireless">11AC双频无线</a></li>
+                            <li onclick = "changeType('450mwireless')"><a href="/product-list-1.html?classtip=450mwireless">450M无线</a></li>
+                            <li onclick = "changeType('300mwireless')"><a href="/product-list-1.html?classtip=300mwireless">300M无线</a></li>
+                            <li onclick = "changeType('wirelessextension')"><a href="/product-list-1.html?classtip=wirelessextension">无线扩展</a></li>
+                            <li onclick = "changeType('portablewireless')"><a href="/product-list-1.html?classtip=portablewireless">便携无线</a></li>
+                            <li onclick = "changeType('cablerouter')"><a href="/product-list-1.html?classtip=cablerouter">有线路由</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <div class="header-subnav-img">
+                        <a href="/product-list-2.html"><img src="http://www.mercurycom.com.cn/content/images/homepage/nic.png?025" alt="router" 
+                        ></a>
+                    </div>
+                    <div class="header-subnav-title"><a href="/product-list-2.html">网卡</a><img src="http://www.mercurycom.com.cn/content/images/homepage/arrow_right_normal.png" alt=">"/></div>
+                    <ul class="header-subnav-list">
+                            <li onclick = "changeType('card150mwireless')"><a href="/product-list-2.html?classtip=card150mwireless">150M无线</a></li>
+                            <li onclick = "changeType('card300mwireless')"><a href="/product-list-2.html?classtip=card300mwireless">300M无线</a></li>
+                            <li onclick = "changeType('carddualbandwireless')"><a href="/product-list-2.html?classtip=carddualbandwireless">双频无线</a></li>
+                            <li onclick = "changeType('usblan')"><a href="/product-list-2.html?classtip=usblan">有线网卡</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <div class="header-subnav-img">
+                        <a href="/product-list-5.html"><img src="http://www.mercurycom.com.cn/content/images/homepage/enterprise.png?025" alt="router" 
+                        ></a>
+                    </div>
+                    <div class="header-subnav-title"><a href="/product-list-5.html">企业无线</a><img src="http://www.mercurycom.com.cn/content/images/homepage/arrow_right_normal.png" alt=">"/></div>
+                    <ul class="header-subnav-list">
+                            <li onclick = "changeType('wirelessroute')"><a href="/product-list-5.html?classtip=wirelessroute">无线路由</a></li>
+                            <li onclick = "changeType('wirelessAP')"><a href="/product-list-5.html?classtip=wirelessAP">面板AP</a></li>
+                            <li onclick = "changeType('wirelessAP2')"><a href="/product-list-5.html?classtip=wirelessAP2">吸顶AP</a></li>
+                            <li onclick = "changeType('wirelessbridge')"><a href="/product-list-5.html?classtip=wirelessbridge">无线网桥</a></li>
+                            <li onclick = "changeType('wirelessAC')"><a href="/product-list-5.html?classtip=wirelessAC">无线控制器</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <div class="header-subnav-img">
+                        <a href="/product-list-3.html"><img src="http://www.mercurycom.com.cn/content/images/homepage/switch.png?025" alt="router" 
+                        ></a>
+                    </div>
+                    <div class="header-subnav-title"><a href="/product-list-3.html">交换机</a><img src="http://www.mercurycom.com.cn/content/images/homepage/arrow_right_normal.png" alt=">"/></div>
+                    <ul class="header-subnav-list">
+                            <li onclick = "changeType('100m')"><a href="/product-list-3.html?classtip=100m">百兆交换机</a></li>
+                            <li onclick = "changeType('1000m')"><a href="/product-list-3.html?classtip=1000m">千兆交换机</a></li>
+                            <li onclick = "changeType('netmanage')"><a href="/product-list-3.html?classtip=netmanage">网管交换机</a></li>
+                            <li onclick = "changeType('POEchange')"><a href="/product-list-3.html?classtip=POEchange">POE交换机</a></li>
+                            <li onclick = "changeType('supervisory')"><a href="/product-list-3.html?classtip=supervisory">监控专用交换机</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <div class="header-subnav-img">
+                        <a href="/product-list-6.html"><img src="http://www.mercurycom.com.cn/content/images/homepage/player.png?025" alt="router" 
+                        ></a>
+                    </div>
+                    <div class="header-subnav-title"><a href="/product-list-6.html">电力猫</a><img src="http://www.mercurycom.com.cn/content/images/homepage/arrow_right_normal.png" alt=">"/></div>
+                    <ul class="header-subnav-list">
+                            <li onclick = "changeType('plc')"><a href="/product-list-6.html?classtip=plc">电力猫</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <div class="header-subnav-img">
+                        <a href="/product-list-43.html"><img src="http://www.mercurycom.com.cn/content/images/homepage/operator.png?025" alt="router" 
+                        ></a>
+                    </div>
+                    <div class="header-subnav-title"><a href="/product-list-43.html">运营商机型</a><img src="http://www.mercurycom.com.cn/content/images/homepage/arrow_right_normal.png" alt=">"/></div>
+                    <ul class="header-subnav-list">
+                            <li onclick = "changeType('router2')"><a href="/product-list-43.html?classtip=router2">路由器</a></li>
+                            <li onclick = "changeType('plc2')"><a href="/product-list-43.html?classtip=plc2">电力猫</a></li>
+                            <li onclick = "changeType('wirelessAP3')"><a href="/product-list-43.html?classtip=wirelessAP3">面板AP</a></li>
+                            <li onclick = "changeType('switch2')"><a href="/product-list-43.html?classtip=switch2">交换机</a></li>
+                            <li onclick = "changeType('wirelessAC2')"><a href="/product-list-43.html?classtip=wirelessAC2">无线控制器</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <div class="header-subnav-img">
+                        <a href="/product-list-7.html"><img src="http://www.mercurycom.com.cn/content/images/homepage/other.png?025" alt="router" 
+                        ></a>
+                    </div>
+                    <div class="header-subnav-title"><a href="/product-list-7.html">其他产品</a><img src="http://www.mercurycom.com.cn/content/images/homepage/arrow_right_normal.png" alt=">"/></div>
+                    <ul class="header-subnav-list">
+                            <li onclick = "changeType('adsl')"><a href="/product-list-7.html?classtip=adsl">ADSL接入</a></li>
+                            <li onclick = "changeType('optical')"><a href="/product-list-7.html?classtip=optical">光纤接入</a></li>
+                            <li onclick = "changeType('other')"><a href="/product-list-7.html?classtip=other">其他产品</a></li>
+                    </ul>
+                  </li>
+          </ul>
+          <div class="header-subnav-bottom-bar"></div>
+      </nav>
+        <nav class="header-subnav smb-subnav">
+            <div class="header-subnav-top-bar"></div>
+          <ul>
+              
+                  <li>
+                    <div class="header-subnav-img"><a href="/product-listsmb-1.html"><img src="http://www.mercurycom.com.cn/content/images/homepage/smbnav/switch.png?025" alt="router"></a></div>
+                    <div class="header-subnav-title"><a href="/product-listsmb-1.html">交换机</a><img src="http://www.mercurycom.com.cn/content/images/homepage/arrow_right_normal.png" alt=">"/></div>                  
+                    <ul class="header-subnav-list">
+                            <li onclick = "changeType('100m')"><a href="/product-listsmb-1.html?classtip=100m">百兆交换机</a></li>
+                            <li onclick = "changeType('1000m')"><a href="/product-listsmb-1.html?classtip=1000m">千兆交换机</a></li>
+                            <li onclick = "changeType('netmanage')"><a href="/product-listsmb-1.html?classtip=netmanage">网管交换机</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <div class="header-subnav-img"><a href="/product-listsmb-2.html"><img src="http://www.mercurycom.com.cn/content/images/homepage/smbnav/poeswitch.png?025" alt="router"></a></div>
+                    <div class="header-subnav-title"><a href="/product-listsmb-2.html">POE交换机</a><img src="http://www.mercurycom.com.cn/content/images/homepage/arrow_right_normal.png" alt=">"/></div>                  
+                    <ul class="header-subnav-list">
+                            <li onclick = "changeType('POEchange')"><a href="/product-listsmb-2.html?classtip=POEchange">POE交换机</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <div class="header-subnav-img"><a href="/product-listsmb-3.html"><img src="http://www.mercurycom.com.cn/content/images/homepage/smbnav/supervisory.png?025" alt="router"></a></div>
+                    <div class="header-subnav-title"><a href="/product-listsmb-3.html">监控专用交换机</a><img src="http://www.mercurycom.com.cn/content/images/homepage/arrow_right_normal.png" alt=">"/></div>                  
+                    <ul class="header-subnav-list">
+                            <li onclick = "changeType('supervisory')"><a href="/product-listsmb-3.html?classtip=supervisory">监控专用交换机</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <div class="header-subnav-img"><a href="/product-listsmb-4.html"><img src="http://www.mercurycom.com.cn/content/images/homepage/smbnav/router.png?025" alt="router"></a></div>
+                    <div class="header-subnav-title"><a href="/product-listsmb-4.html">路由器</a><img src="http://www.mercurycom.com.cn/content/images/homepage/arrow_right_normal.png" alt=">"/></div>                  
+                    <ul class="header-subnav-list">
+                            <li onclick = "changeType('wirelessroute')"><a href="/product-listsmb-4.html?classtip=wirelessroute">企业无线路由</a></li>
+                            <li onclick = "changeType('cablerouter')"><a href="/product-listsmb-4.html?classtip=cablerouter">企业路由</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <div class="header-subnav-img"><a href="/product-listsmb-5.html"><img src="http://www.mercurycom.com.cn/content/images/homepage/smbnav/wirelessap.png?025" alt="router"></a></div>
+                    <div class="header-subnav-title"><a href="/product-listsmb-5.html">无线AP</a><img src="http://www.mercurycom.com.cn/content/images/homepage/arrow_right_normal.png" alt=">"/></div>                  
+                    <ul class="header-subnav-list">
+                            <li onclick = "changeType('wirelessAP')"><a href="/product-listsmb-5.html?classtip=wirelessAP">面板AP</a></li>
+                            <li onclick = "changeType('wirelessAP2')"><a href="/product-listsmb-5.html?classtip=wirelessAP2">吸顶AP</a></li>
+                            <li onclick = "changeType('wirelessAC')"><a href="/product-listsmb-5.html?classtip=wirelessAC">无线控制器</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <div class="header-subnav-img"><a href="/product-listsmb-6.html"><img src="http://www.mercurycom.com.cn/content/images/homepage/smbnav/wirelessbridge.png?025" alt="router"></a></div>
+                    <div class="header-subnav-title"><a href="/product-listsmb-6.html">无线网桥</a><img src="http://www.mercurycom.com.cn/content/images/homepage/arrow_right_normal.png" alt=">"/></div>                  
+                    <ul class="header-subnav-list">
+                            <li onclick = "changeType('wirelessbridge')"><a href="/product-listsmb-6.html?classtip=wirelessbridge">无线网桥</a></li>
+                    </ul>
+                  </li>
+              
+          </ul>
+            <div class="header-subnav-bottom-bar"></div>
+      </nav>
+    </header>
+        <!-- Header End -->
+        <!-- Main Start -->
+		<div id="main">
+			
+
+
+<div class="mercury-head-video">
+<!--
+    <a href="/product-216-1.html">
+        <video src="http://video.tp-link.com.cn/mercury/1_p2.mp4" autoplay="autoplay" loop="loop" poster="/content/video/1_poster.jpg">
+            
+        </video>
+    </a>
+-->
+<a href="/product-295-1.html">
+        <video src="http://video.tp-link.com.cn/mercury/3_p2.mp4" autoplay="autoplay" loop="loop" poster="http://video.tp-link.com.cn/mercury/3_poster.jpg">
+            
+        </video>
+    </a>
+</div>
+
+<div class="mercury-slider">
+	<div class="mercury-slider-inner">
+	
+		<ul class="mercury-slides">
+		    	
+            <li class="mercury-slider-list">
+				<a href="/product-224-1.html" target="_blank">
+					<div class="mercury-slider-item">
+						<img class="mercury-item-image" src="dist/images/home/D26G Pro.jpg" alt="2">
+						<div class="mercury-item-content">
+							<h3 class="white-ground title">
+								畅快，坚固<br>不俗实力
+							</h3>
+                            <p class="line2 white-ground">
+								2600M 11AC双频千兆无线路由器<br />
+                                战舰路由 D26G Pro
+							</p>
+							<div class="info-link black-button">
+								<span class="knowMore">了解更多</span>
+							</div>
+						</div>
+					</div>
+				</a>
+			</li>
+
+			<li class="mercury-slider-list">
+				<a href="/product-330-1.html" target="_blank">
+					<div class="mercury-slider-item">
+						<img class="mercury-item-image" src="dist/images/home/d128_2.jpg" alt="1">
+						<div class="mercury-item-content">
+							<h3 class="white-ground title">
+								信号覆盖的<br />凶猛利器
+							</h3>
+                            <p class="line2 white-ground">
+								1200M 11AC双频无线路由器<br />幻影路由 D128
+							</p>
+							<div class="info-link black-button">
+								<span class="knowMore">了解更多</span>
+							</div>
+						</div>
+					</div>
+				</a>
+			</li>
+            <li class="mercury-slider-list">
+				<a href="/product-271-1.html" target="_blank">
+					<div class="mercury-slider-item">
+						<img class="mercury-item-image" src="dist/images/home/D21.jpg" alt="1">
+						<div class="mercury-item-content">
+							<h3 class="white-ground title">
+								5G快人一步<br>网速所向披靡
+							</h3>
+                            <p class="line2 white-ground">
+								2100M 11AC双频无线路由器<br />
+                                飞鹰路由 D21
+							</p>
+							<div class="info-link black-button">
+								<span class="knowMore">了解更多</span>
+							</div>
+						</div>
+					</div>
+				</a>
+			</li>
+			<li class="mercury-slider-list">
+				<a href="/product-216-1.html" target="_blank">
+					<div class="mercury-slider-item">
+						<img class="mercury-item-image" src="dist/images/home/D12.jpg" alt="1">
+						<div class="mercury-item-content">
+							<h3 class="white-ground title">
+								光纤必备<br>网速加倍
+							</h3>
+                            <p class="line2 white-ground">
+								1200M 11AC双频无线路由器<br />
+                                薄荷路由 D12
+							</p>
+							<div class="info-link black-button">
+								<span class="knowMore">了解更多</span>
+							</div>
+						</div>
+					</div>
+				</a>
+			</li>
+			<li class="mercury-slider-list">
+				<a href="/product-224-1.html" target="_blank">
+					<div class="mercury-slider-item">
+						<img class="mercury-item-image" src="dist/images/home/D26G Pro.jpg" alt="2">
+						<div class="mercury-item-content">
+							<h3 class="white-ground title">
+								畅快，坚固<br>不俗实力
+							</h3>
+                            <p class="line2 white-ground">
+								2600M 11AC双频千兆无线路由器<br />
+                                战舰路由 D26G Pro
+							</p>
+							<div class="info-link black-button">
+								<span class="knowMore">了解更多</span>
+							</div>
+						</div>
+					</div>
+				</a>
+			</li>
+			<!-- <li class="mercury-slider-list">
+				<a href="/product-294-1.html" target="_blank">
+					<div class="mercury-slider-item">
+						<img class="mercury-item-image" src="dist/images/home/T30.jpg" alt="3">
+						<div class="mercury-item-content">
+							<h3 class="white-ground title">
+								信号流溢<br />快如幻影
+							</h3>
+                            <p class="line2 white-ground">
+								3000M 11AC三频千兆无线路由器<br />
+                                幻影路由 T30HG
+							</p>
+							<div class="info-link black-button">
+								<span class="knowMore">了解更多</span>
+							</div>
+						</div>
+					</div>
+				</a>
+			</li> -->
+
+            <li class="mercury-slider-list">
+				<a href="/product-294-1.html" target="_blank">
+					<div class="mercury-slider-item">
+						<img class="mercury-item-image" src="dist/images/home/T30.jpg" alt="3">
+						<div class="mercury-item-content">
+							<h3 class="white-ground title">
+								新增<br />新增
+							</h3>
+                            <p class="line2 white-ground">
+								新增新增新增新增<br />
+                                新增新增新增
+							</p>
+							<div class="info-link black-button">
+								<span class="knowMore">了解更多</span>
+							</div>
+						</div>
+					</div>
+				</a>
+			</li>
+
+		</ul>
+		
+	</div>
+	
+	<i class="mercury-slider-btn mercury-slider-prev"></i>
+	<i class="mercury-slider-btn mercury-slider-next"></i>
+				
+	<div class="mercury-slider-ctrl">
+		<span class="mercury-slider-dot active"></span>
+		<span class="mercury-slider-dot"></span>
+		<span class="mercury-slider-dot"></span>
+        <span class="mercury-slider-dot"></span>
+	</div>
+	
+</div>
+
+<div class="promos">
+    <ul>
+        <li class="promo" data-url="/product-206-1.html">
+			<img class="promoImg" src="dist/images/home/MP1.jpg" alt="1" />
+            <div class="promo-info">
+                <h3 class="white-ground">
+					插座变热点<br>信号变满格
+				</h3>
+				<p class="line2 white-ground">
+					Wi-Fi扩展电力猫<br />
+                    MP1
+				</p>
+				<div class="info-link black-button">
+					<span class="knowMore">了解更多</span>
+				</div>
+            </div>
+        </li>
+
+        <li class="promo" data-url="/product-322-1.html">
+			<img class="promoImg" src="dist/images/home/MIAP1200GP.jpg" alt="2" />
+            <div class="promo-info">
+                <h3 class="white-ground">
+						    组网趋势<br>专业无线覆盖
+					    </h3>
+                        <p class="line2 white-ground">
+						    1200M 11AC双频千兆无线面板式AP<br />
+                            MIAP1200GP
+					    </p>
+				<div class="info-link black-button">
+					<span class="knowMore">了解更多</span>
+				</div>
+            </div>
+        </li>
+			
+        <li class="promo" data-url="/product-299-1.html">
+			<img class="promoImg" src="dist/images/home/MER2600G.jpg" alt="3" />
+            <div class="promo-info">
+                <h3 class="white-ground">
+						    专为企业<br>量身打造
+					    </h3>
+                        <p class="line2 white-ground">
+						    2600M企业级双频千兆无线路由器<br />
+                            MER2600G
+					    </p>
+				<div class="info-link black-button">
+					<span class="knowMore">了解更多</span>
+				</div>
+            </div>
+        </li>
+		
+		
+		
+    </ul>
+</div>
+
+        
+
+		</div>
+        <!-- Main End -->
+        <!-- Footer Start -->
+        <footer class="global-footer">
+      <div class="footer-link">
+        <ul>
+          <li><a href="/product-list.html">产品分类</a></li>
+          <li><a href="/product-list-1.html">路由器</a></li>
+          <li><a href="/product-list-2.html">网卡</a></li>
+          <li><a href="/product-list-5.html">企业无线</a></li>
+          <li><a href="/product-list-3.html">交换机</a></li>
+          <li><a href="/product-list-6.html">电力猫</a></li>
+          <li><a href="/product-list-43.html">运营商机型</a></li>
+          <li><a href="/product-list-7.html">其他产品</a></li>
+        </ul>
+        <ul>
+          <li><a href="http://service.mercurycom.com.cn/">服务支持</a></li>
+          <li><a href="http://service.mercurycom.com.cn/article-list.html">文档中心</a></li>
+          <li><a href="http://service.mercurycom.com.cn/download-list.html">下载中心</a></li>
+          <li><a href="http://service.mercurycom.com.cn/video-list.html">视频教程</a></li>
+          <li><a href="http://service.mercurycom.com.cn/">售后服务</a></li>
+        </ul>
+        <ul>
+          <li><a href="/about.html">关于我们</a></li>
+          <li><a href="/about.html">公司简介</a></li>
+          <li><a href="/about.html#contact">联系我们</a></li>
+          <li><a href="javascript:void(0)" onclick="window.open('https://care60.live800.com/live800/chatClient/chatbox.jsp?companyID=80001104&configID=583','','width=940,height=690,top=' + (screen.height / 2 - 345) + ',left=' + (screen.width / 2 - 475) + '')">在线客服</a></li>
+        </ul>
+      </div>
+      <div class="footer-copyright">
+        <div>
+           <div><img src="http://szcert.ebs.org.cn/Images/govIcon.gif" title="深圳市市场监督管理局企业主体身份公示" alt="深圳市市场监督管理局企业主体身份公示" width="18" height="25" border="0" /></div>
+           <div><a href="http://www.miitbeian.gov.cn">&nbsp;粤ICP备13057464号</a></div>
+        </div>
+        <div>
+          深圳市美科星通信技术有限公司 版权所有 Copyright © 2017 Mercury All rights reserved.
+        </div>
+      </div>
+    </footer>
+        <!-- Footer End -->
+		<script src="/dist/js/jquery-1.7.2.min.js" type="text/javascript"></script>
+        <script src="/dist/js/jquery.lazyload.js" type="text/javascript"></script>
+		<script src="/dist/js/common.js" type="text/javascript"></script>
+        <script src="/dist/js/analytis.js" type="text/javascript"></script>
+        
+    <script src="/dist/js/mercuryHome.min.js" type="text/javascript"></script>
+
+        <!-- Header Control -->
+        <script>
+            // 控制Header动画
+            function navHandler($trigger,$subNav) {
+                $trigger.hover(function () {
+                    //var flag = true;
+                    //if (flag) {
+                        if ($(window).width() >= 890) {
+                            $subNav.removeClass('slideup')
+                                .css('opacity', '1')
+                                .addClass('slidedown');
+                        }
+                    //}
+                }, function () {
+                    //flag = false;
+                    //if (!flag) {
+                        if ($(window).width() >= 890) {
+                            $subNav.removeClass('slidedown')
+                                .addClass('slideup')
+                                .css('opacity', '0');
+                        }
+                        $('.header-nav li').removeClass('item-selected');
+                    //}
+                });
+
+                $('.header-nav li').hover(
+                  function () {
+                      $('.header-nav li').removeClass('item-selected');
+                      $(this).addClass('item-selected');
+                      $(this).find(".nav-bottom-bar").css("display", "block");
+                  }, function () {
+                      if (this != $('.header-nav li')[0]) {
+                          $(this).removeClass('item-selected');
+                      }
+                      $(this).find(".nav-bottom-bar").css("display", "none");
+                  }
+                );
+
+                $('.product-subnav').hover(
+                  function () {
+                      $('.header-nav li:eq(0)').addClass('item-selected');
+                      $('.header-nav li:eq(0) .nav-bottom-bar').css("display","block");
+                  }, function () {
+                      $('.header-nav li:eq(0)').removeClass('item-selected');
+                      $('.header-nav li:eq(0) .nav-bottom-bar').css("display", "none");
+                  }
+                );
+
+                $('.smb-subnav').hover(
+                  function () {
+                      $('.header-nav li:eq(1)').addClass('item-selected');
+                      $('.header-nav li:eq(1) .nav-bottom-bar').css("display", "block");
+                  }, function () {
+                      $('.header-nav li:eq(1)').removeClass('item-selected');
+                      $('.header-nav li:eq(1) .nav-bottom-bar').css("display", "none");
+                  }
+                );
+
+                $('.header-search > form > input').focus(function () {
+                    $('.header-search > form').css("border-bottom", "#E83232 2px solid");
+                });
+                $('.header-search > form > input').focusout(function () {
+                    $('.header-search > form').css("border-bottom", "#D9D9D9 1px solid");
+                });
+            };
+            $('.header-subnav-title').hover(function () {
+                $(this).find('a').css('color', '#E83232');
+                $(this).find('img').attr('src', 'http://www.mercurycom.com.cn/content/images/homepage/arrow_right_hover.png');
+            }, function () {
+                $(this).find('a').css('color', '#1a1a1a');
+                $(this).find('img').attr('src', 'http://www.mercurycom.com.cn/content/images/homepage/arrow_right_normal.png');
+            })
+            var $productSubNav = $('.header-subnav.product-subnav');
+            var $product = $('.header-nav li:eq(0), .header-subnav.product-subnav');
+            var $smbSubNav = $('.header-subnav.smb-subnav');
+            var $smb = $('.header-nav li:eq(1), .header-subnav.smb-subnav');
+            navHandler($product, $productSubNav);
+            navHandler($smb, $smbSubNav);
+            // 再次验证样式正确
+            function validateStyle() {
+                var $subNavList = $($('.header-subnav > ul')[0]);
+                var listWidth = $subNavList.width();
+                var windowWidth = $(window).width();
+                if (windowWidth > listWidth && $subNavList.css('margin-left') !== (-listWidth / 2) + 'px') {
+                    $subNavList.css('margin-left', (-listWidth / 2) + 'px');
+                }
+            }
+            validateStyle();
+            $(window).resize(function () {
+                //if ($(window).width() < 1440) {
+                //    $('.header-subnav').css('top', '-752px');
+                //} else {
+                //    $('.header-subnav').css('top', '-449px');
+                //}
+                //navHandler();
+                validateStyle();
+            });
+    </script>
+        <!-- Header Control -->
+        <!-- Live800在线客服图标:[固定型] 开始-->
+        <!--<script language="javascript" src="https://care60.live800.com/live800/chatClient/staticButton.js?companyID=80001104&configID=583&codeType=custom" charset="UTF-8"></script>-->
+        <!-- Live800在线客服图标:[固定型] 结束-->
+        <!-- Live800在线客服功能代码  开始-->
+        <!-- <script language="javascript" src="https://care60.live800.com/live800/chatClient/monitor.js?companyID=80001104&configID=582&codeType=custom" charset="UTF-8"></script>-->
+        <!-- Live800在线客服功能代码  结束-->
+        <!-- Live800消息提醒代码 开始-->
+        <!-- <script language="javascript" src="https://care60.live800.com/live800/chatClient/chattip.js?companyID=80001104&configID=582&codeType=custom" charset="UTF-8"></script>-->
+        <!-- Live800消息提醒代码 结束-->
+	</body>
+</html>
