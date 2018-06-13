@@ -10,8 +10,11 @@ alias wifidisconnect='python3 mw316r.py -disconnect'
 alias wifireconnect='python3 mw316r.py -reconnect'
 alias wifirenew='python3 mw316r.py -renew'
 alias wifirelease='python3 mw316r.py -release'
+<<<<<<< HEAD
 alias wifiwancfg='python3 mw316r.py -wan_cfg'
 alias wifiwanpppoe='python3 mw316r.py -wan_cfg pppoe'
 
 ##reconnect until ipaddr changed#
 alias wifichangeip='python3 mw316r.py -changeip'
+=======
+>>>>>>> 2cb2df3c608618267872c390e5b0195ae2420ada

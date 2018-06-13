@@ -58,9 +58,12 @@ ACTIONS = {
     "dot1x_logout":"/userRpm/StatusRpm.htm?Login=%B5%C7%20%C2%BC&wan=",
     "dot1x_login":"/userRpm/StatusRpm.htm?Logout=%CD%CB%20%B3%F6&wan=",
     "wan_cfg" : {
+<<<<<<< HEAD
         "types":"wantypeinfo",
         "pppoe":"pppoeInf",
         "detect":"wanTypeDetectInfo"
+=======
+>>>>>>> 2cb2df3c608618267872c390e5b0195ae2420ada
     }
 }
 
@@ -134,10 +137,14 @@ URLS = {
     'user_menu':BASE + "/userRpm/MenuRpm.htm",
     'user_index':BASE + "/userRpm/Index.htm",
     'user_wan_cfg':BASE + "/userRpm/WanCfgRpm.htm",
+<<<<<<< HEAD
     'user_dynamic_cfg':BASE + "/userRpm/WanDynamicIpCfgRpm.htm",
     'user_static_cfg':BASE + "/userRpm/WanStaticIpCfgRpm.htm",
     'user_pppoe_cfg':BASE + "/userRpm/PPPoECfgRpm.htm",
     'user_pppoe_cfg_adv':BASE + "/userRpm/PPPoECfgAdvRpm.htm?Advanced=%B8%DF%BC%B6%C9%E8%D6%C3&wan=",
+=======
+    'user_pppoe_cfg':BASE + "/userRpm/PPPoECfgRpm.htm",
+>>>>>>> 2cb2df3c608618267872c390e5b0195ae2420ada
     'frames_logo':BASE + "/frames/logo.htm",
     'frames_banner':BASE + "/frames/banner.htm",
     'wzd_start':BASE + "/userRpm/WzdStartRpm.htm",
@@ -152,10 +159,14 @@ URLS = {
     'custom_js':BASE + "/dynaform/custom.js",
     'auth_fail_reason':BASE + "/help/PPPoECfgFailAuthReasonHelpRpm.htm",
     'resp_fail_reason':BASE + "/help/PPPoECfgFailResponseReasonHelpRpm.htm",
+<<<<<<< HEAD
     'other_fail_reason':BASE + "/help/PPPoECfgFailOtherReasonHelpRpm.htm",
     "pppoe_cfg_auth_fail_reason":BASE + "/help/PPPoECfgFailAuthReasonHelpRpm.htm",
     "pppoe_cfg_resp_fail_reason":BASE + "/help/PPPoECfgFailResponseReasonHelpRpm.htm",
     "pppoe_cfg_other_fail_reason":BASE + "/help/PPPoECfgFailOtherReasonHelpRpm.htm"
+=======
+    'other_fail_reason':BASE + "/help/PPPoECfgFailOtherReasonHelpRpm.htm"
+>>>>>>> 2cb2df3c608618267872c390e5b0195ae2420ada
 }
 
 
@@ -541,6 +552,7 @@ def get_status(ckstr,url=URLS['status'],coding='gb2312',**kwargs):
     
 ####################################
 
+<<<<<<< HEAD
  
 
 
@@ -625,6 +637,8 @@ def pppoe_if_l2d(pppoeInf,detected_wan_type):
     d["wan_num"] = int(pppoeInf[5]) + 1
     return(d)
 
+=======
+>>>>>>> 2cb2df3c608618267872c390e5b0195ae2420ada
 def get_wan_cfg(ckstr,url=URLS['user_wan_cfg'],base=BASE,coding='gb2312',**kwargs):
     ic = req(url,ckstr,base=BASE,referer=URLS['user_menu'])
     rslt = nvbody.show_resp_body(ic,'html body',coding=coding,only_print=False)
@@ -633,6 +647,7 @@ def get_wan_cfg(ckstr,url=URLS['user_wan_cfg'],base=BASE,coding='gb2312',**kwarg
     url = base + m.group(1)
     ic = req(url,ckstr,base=BASE,referer=URLS['user_wan_cfg'])
     d = get_raw_script_dict(ic,coding=coding)
+<<<<<<< HEAD
     d['wanTypeDetectInfo'] = wan_type_detect_l2d(d['wanTypeDetectInfoArray'])
     del d['wanTypeDetectInfoArray']
     d['wantypeinfo'] = wan_type_info_l2d(d['wantypeinfo'])
@@ -640,6 +655,9 @@ def get_wan_cfg(ckstr,url=URLS['user_wan_cfg'],base=BASE,coding='gb2312',**kwarg
     d['pppoeInf'] = pppoe_if_l2d(d['pppoeInf'],detected_wan_type)
     return(d)
 
+=======
+    
+>>>>>>> 2cb2df3c608618267872c390e5b0195ae2420ada
 
 ##############################
 
@@ -695,15 +713,23 @@ def handle_action(arr,action,base=BASE,debug=False):
         ic = req(url,ckstr)
         d = wait_for_ip(ckstr,num)
         ###
+<<<<<<< HEAD
         new_ip = d['wanParas'][num-1]['ip']
         print("old_ip: {0} for wan {1}".format(old_ip,num))
         print("new_ip: {0} for wan {1}".format(new_ip,num))
+=======
+        print("old_ip: {0} for wan {1}".format(old_ip,num))
+        print("new_ip: {0} for wan {1}".format(d['wanParas'][num-1]['ip'],num))
+>>>>>>> 2cb2df3c608618267872c390e5b0195ae2420ada
         ###
         if(debug):
             return(ic)
         else:
             pass
+<<<<<<< HEAD
         return((old_ip,new_ip))
+=======
+>>>>>>> 2cb2df3c608618267872c390e5b0195ae2420ada
 
 def do_actions():
     arr = sys.argv[1:]
@@ -738,6 +764,7 @@ def do_actions():
             for key in params:
                 pobj(d[key])
     elif(arr[0] == '-connect'):
+<<<<<<< HEAD
         old_ip,new_ip = handle_action(arr,'connect')
     elif(arr[0] == '-disconnect'):
         old_ip,new_ip = handle_action(arr,'disconnect')
@@ -767,6 +794,18 @@ def do_actions():
         old_ip,new_ip = handle_action(arr,'renew')
     elif(arr[0] == '-release'):
         old_ip,new_ip = handle_action(arr,'release')
+=======
+        handle_action(arr,'connect')
+    elif(arr[0] == '-disconnect'):
+        handle_action(arr,'disconnect')
+    elif(arr[0] == '-reconnect'):
+        handle_action(arr,'disconnect')
+        handle_action(arr,'connect')
+    elif(arr[0] == '-renew'):
+        handle_action(arr,'renew')
+    elif(arr[0] == '-release'):
+        handle_action(arr,'release')
+>>>>>>> 2cb2df3c608618267872c390e5b0195ae2420ada
     elif(arr[0] == '-fail_help'):
         ckstr = load_ckstr()
         params = arr[1:]
@@ -780,6 +819,7 @@ def do_actions():
             url = base+rel_url
             ic = req(url,ckstr)
     #####################################
+<<<<<<< HEAD
     elif(arr[0] == '-wan_cfg'):
         ckstr = load_ckstr()
         params = arr[1:]
@@ -792,6 +832,8 @@ def do_actions():
             d = get_wan_cfg(ckstr)
             for key in params:
                 pobj(d[key])
+=======
+>>>>>>> 2cb2df3c608618267872c390e5b0195ae2420ada
     
     
 if(__name__=="__main__"):
@@ -802,4 +844,7 @@ else:
 
 ##@wizard_start
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 2cb2df3c608618267872c390e5b0195ae2420ada
